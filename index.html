@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jokenpô</title>
+    <link rel="stylesheet" href="./src/styles/output.css" />
+  </head>
+  <body>
+    <div id="main">
+      <h1 id="title">Pedra, Papel e Tesoura</h1>
+
+      <div id="scoreboard">
+        <div id="player">
+          <h2 id="player-name"></h2>
+          <span id="player-points">0</span>
+          <ul id="player-choice">
+            <li>
+              <a id="player-choice-1"><img src="./src/img/rock.png" /></a>
+            </li>
+            <li>
+              <a id="player-choice-2"><img src="./src/img/paper.png" /></a>
+            </li>
+            <li>
+              <a id="player-choice-3"><img src="./src/img/scissors.png" /></a>
+            </li>
+          </ul>
+        </div>
+        <div id="versus"><h2>VS</h2></div>
+        <div id="computer">
+          <h2 id="computer-name"></h2>
+          <span id="computer-points">0</span>
+          <ul id="computer-choice">
+            <li>
+              <a id="computer-choice-1"><img src="./src/img/rock.png" /></a>
+            </li>
+            <li>
+              <a id="computer-choice-2"><img src="./src/img/paper.png" /></a>
+            </li>
+            <li>
+              <a id="computer-choice-3"><img src="./src/img/scissors.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="message"></div>
+      <div id="winner" class=""></div>
+    </div>
+    <script src="./src/scripts/script.js"></script>
+  </body>
+</html>

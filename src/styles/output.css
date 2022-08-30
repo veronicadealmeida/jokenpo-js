@@ -1,0 +1,126 @@
+body {
+  font-family: Helvetica Neue, Helvetica, Arial;
+  font-weight: 400;
+}
+
+h1 {
+  text-align: center;
+  color: #636e72;
+}
+
+#scoreboard #player #player-choice {
+  cursor: pointer;
+}
+
+#scoreboard #player #player-choice, #scoreboard #computer #computer-choice {
+  margin: 3rem 0 0rem 0rem;
+}
+
+#scoreboard #player ul, #scoreboard #computer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#scoreboard #player ul li, #scoreboard #computer ul li {
+  display: inline;
+}
+#scoreboard #player ul li a, #scoreboard #computer ul li a {
+  opacity: 0.2;
+}
+#scoreboard #player ul li a img, #scoreboard #computer ul li a img {
+  max-width: 8rem;
+}
+#scoreboard #player ul li .active, #scoreboard #computer ul li .active {
+  opacity: 1;
+}
+#scoreboard #player ul li .inactive, #scoreboard #computer ul li .inactive {
+  opacity: 0.2;
+}
+
+#main {
+  max-width: 800rem;
+  margin: 0 auto;
+}
+
+#scoreboard {
+  color: #fff;
+  display: grid;
+  grid-template-columns: 5, 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "player player versus computer computer";
+}
+#scoreboard #player, #scoreboard #computer {
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  position: relative;
+}
+#scoreboard #player h2, #scoreboard #computer h2 {
+  margin: 0;
+  padding: 0;
+}
+#scoreboard #player-name, #scoreboard #computer-name {
+  font-size: 1.5rem;
+  position: absolute;
+}
+#scoreboard #player-points, #scoreboard #computer-points {
+  font-size: 3rem;
+  position: absolute;
+}
+#scoreboard #player {
+  grid-area: player;
+  background-color: #a29bfe;
+}
+#scoreboard #player #player-points {
+  right: 1.5rem;
+}
+#scoreboard #versus {
+  grid-area: versus;
+  color: black;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  margin-inline: 1rem;
+}
+#scoreboard #computer {
+  grid-area: computer;
+  background-color: #fab1a0;
+  align: right;
+}
+#scoreboard #computer #computer-name {
+  right: 1.5rem;
+}
+
+#message {
+  background-color: #636e72;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.winner, .loser, .tie {
+  color: #636e72;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.winner {
+  background-color: #55efc4;
+}
+
+.loser {
+  background-color: #ff7675;
+}
+
+.tie {
+  background-color: #ffeaa7;
+}
+
+/*# sourceMappingURL=output.css.map */
